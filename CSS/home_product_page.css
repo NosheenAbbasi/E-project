@@ -1,0 +1,1137 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Gelasio&family=Great+Vibes&family=Pacifico&family=Poppins:ital,wght@0,200;1,200&family=Sacramento&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.header
+{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding: 20px 297px;
+    background-color: rgb(242, 237, 242);
+    box-shadow: 2px 4px 6px rgba(89, 87, 87, 0.468);
+    justify-content:space-between;
+    font-family: 'Gelasio', serif;
+}
+.image
+{
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: -3%;
+    margin-left: -40%;
+}
+.image img
+{
+    width: 100%;
+    height:15vh;
+}
+.fixHeader
+{
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+ul
+{
+    display: flex;
+} 
+ul li
+{
+    margin-left: 10px;
+}
+ul li a
+{
+    color: rgb(20, 20, 20);
+    font-size: 18px;
+    padding:  4px 10px;
+    /* border-radius: 8px; */
+}
+ul li a:hover
+{
+    padding:  4px 10px;
+    background-color:rgb(3, 3, 101);
+    color: #fff;
+}
+/* dropdown Start */
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-items
+{
+    display: none;
+    position: absolute;
+    background-color: #f3f0f0;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.751);
+    z-index: 1000;
+}
+.dropdown-items a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Gelasio', serif;
+}
+.dropdown-items a:hover 
+{
+    background-color:rgb(3, 3, 101);
+    color: #fff;
+}
+.dropdown:hover .dropdown-items 
+{
+    display: block;
+}
+/* dropdown End */
+/* search box start */
+.searchBx
+{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(3, 3, 101);
+    outline: none;
+    color: #000;
+    padding:5px 25px;
+    background-color: #fff;
+
+}
+.searchBx input
+{
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+::placeholder
+{
+    color:rgb(3, 3, 101);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+}
+/* search box End */
+/* product banner start  */
+.itemsbanner
+{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color:rgb(3, 3, 101);
+    justify-content:space-around;
+    margin-top: 15px;
+}
+.itemsbanner 
+{
+    display: flex;
+}
+.itemsbanner ul li 
+{
+    margin: 20px 20px;
+}
+.itemsbanner ul li .listbn
+{
+   color: rgb(254, 249, 249);
+   position: relative;
+   font-family: 'Gelasio', serif;
+}
+.itemsbanner ul li .listbn::before
+{
+   content: "";
+   position: absolute;
+   bottom: -5px;
+   left: 0px;
+   width: 0%;
+   height: 2px;
+   background-color: #fff;
+   transition-duration: 0.2s;
+} 
+.itemsbanner ul li .listbn:hover::before
+{
+   width: 100%;
+}
+/* product banner End  */
+/* section 2 cards group1 Start */
+/* section 2 cards1 Start */
+.hdheading 
+{
+    color: rgba(173, 169, 169, 0.146);
+    font-size: 100px;
+    position:absolute;
+    margin-top: 2.5%;
+    margin-left: 3.8%;
+}
+.maincard
+{
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    position: absolute;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.maincard .card1 
+{
+    width: 20%;
+    height: 79vh;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 4%;
+    box-shadow: 2px 4px 7px rgb(186, 184, 184);
+    background-color: #fff;
+}
+.maincard .card1 img
+{
+    width: 95%;
+    height:45%;
+    position: absolute;
+    margin-top: 0;
+    transition: 0.4s;
+}
+.maincard .card1 img:hover
+{
+   transform: scale(0.9);
+}
+.maincard .card1 h1
+{
+    color:rgb(3, 3, 101);
+    font-size: 16px;
+    font-weight: bold;     
+    position: absolute;
+    margin-top: 126%;
+    margin-left: 6%;
+}
+.maincard .card1 p
+{
+    color: #101010;
+    font-size: 16px;
+    font-weight: bold;  
+    position: absolute;
+    margin-top: 95%;
+    margin-left: 5%;   
+}
+.maincard .card1 a
+{
+ position: absolute;
+ bottom: 80px;
+ left: 50px;
+ width: 140px;
+ height: 30px;
+ border-radius:15px ;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: rgb(3, 3, 101);
+ transition: 0.4s;
+}
+.maincard .card1 a button
+{
+ color: white;
+ cursor: pointer;
+ background-color: transparent;
+ border: none;
+ width: 100%;
+ height: 100%; 
+ 
+}
+.maincard .card1 a:hover
+{
+ background-color: rgba(3, 3, 147, 0.931);
+ color: white;
+}
+/* section 2 cards1 End */
+ /* section 2 cards2 Start */
+.maincard .card2
+{
+    width: 20%;
+    height: 79vh;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 28%;
+    box-shadow: 2px 4px 7px rgb(186, 184, 184);
+    background-color: #fff;
+}
+.maincard .card2 img
+{
+    width: 95%;
+    height:45%;
+    position: absolute;
+    margin-top: 0;
+    transition: 0.4s;
+}
+.maincard .card2 img:hover
+{
+   transform: scale(0.9);
+}
+.maincard .card2 h1
+{
+    color:rgb(3, 3, 101);
+    font-size: 16px;
+    font-weight: bold;     
+    position: absolute;
+    margin-top: 126%;
+    margin-left: 6%;
+}
+.maincard .card2 p
+{
+    color: #101010;
+    font-size: 16px;
+    font-weight: bold;  
+    position: absolute;
+    margin-top: 95%;
+    margin-left: 5%;   
+}
+.maincard .card2 a
+{
+ position: absolute;
+ bottom: 80px;
+ left: 65px;
+ width: 140px;
+ height: 30px;
+ border-radius:15px ;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: rgb(3, 3, 101);
+ transition: 0.4s;
+}
+.maincard .card2 a button
+{
+ color: white;
+ cursor: pointer;
+ background-color: transparent;
+ border: none;
+ width: 100%;
+ height: 100%; 
+ 
+}
+.maincard .card2 a:hover
+{
+ background-color: rgba(3, 3, 147, 0.931);
+ color: white;
+}
+/* section 2 cards2 End */
+ /* section 2 cards3 Start */
+ .maincard .card3
+ {
+      width: 20%;
+      height: 79vh;
+      position: absolute;
+      margin-top: 3%;
+      margin-left: 52%;
+      box-shadow: 2px 4px 7px rgb(186, 184, 184);
+      background-color: #fff;
+ }
+ .maincard .card3 img
+{
+    width: 100%;
+    height:70%;
+    position: absolute;
+    margin-top: -3;
+    transition: 0.4s;
+}
+.maincard .card3 img:hover
+{
+   transform: scale(0.9);
+}
+.maincard .card3 h1
+{
+    color:rgb(3, 3, 101);
+    font-size: 16px;
+    font-weight: bold;     
+    position: absolute;
+    margin-top: 126%;
+    margin-left: 6%;
+}
+.maincard .card3 p
+{
+    color: #101010;
+    font-size: 16px;
+    font-weight: bold;  
+    position: absolute;
+    margin-top: 95%;
+    margin-left: 5%;   
+}
+.maincard .card3 a
+{
+ position: absolute;
+ bottom: 80px;
+ left: 65px;
+ width: 140px;
+ height: 30px;
+ border-radius:15px ;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: rgb(3, 3, 101);
+ transition: 0.4s;
+}
+.maincard .card3 a button
+{
+ color: white;
+ cursor: pointer;
+ background-color: transparent;
+ border: none;
+ width: 100%;
+ height: 100%; 
+ 
+}
+.maincard .card3 a:hover
+{
+ background-color: rgba(3, 3, 147, 0.931);
+ color: white;
+}
+  /* section 2 cards3 End */
+  /* section 2 cards4 Start */
+ .maincard .card4
+ {
+      width: 20%;
+      height: 79vh;
+      position: absolute;
+      margin-top: 3%;
+      margin-left: 76%;
+      box-shadow: 2px 4px 7px rgb(186, 184, 184);
+      background-color: #fff;
+ }
+ .maincard .card4 img
+{
+    width: 95%;
+    height:60%;
+    position: absolute;
+    margin-top: 0;
+    transition: 0.4s;
+}
+.maincard .card4 img:hover
+{
+   transform: scale(0.9);
+}
+.maincard .card4 h1
+{
+    color:rgb(3, 3, 101);
+    font-size: 16px;
+    font-weight: bold;     
+    position: absolute;
+    margin-top: 126%;
+    margin-left: 6%;
+}
+.maincard .card4 p
+{
+    color: #101010;
+    font-size: 16px;
+    font-weight: bold;  
+    position: absolute;
+    margin-top: 95%;
+    margin-left: 5%;   
+}
+.maincard .card4 a
+{
+ position: absolute;
+ bottom: 80px;
+ left: 65px;
+ width: 140px;
+ height: 30px;
+ border-radius:15px ;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: rgb(3, 3, 101);
+ transition: 0.4s;
+}
+.maincard .card4 a button
+{
+ color: white;
+ cursor: pointer;
+ background-color: transparent;
+ border: none;
+ width: 100%;
+ height: 100%; 
+ 
+}
+.maincard .card4 a:hover
+{
+ background-color: rgba(3, 3, 147, 0.931);
+ color: white;
+}
+  /* section 2 cards4 End */
+/* section 2 cards Group1 End */
+
+/* section 2 cards group2 Start */
+ /* section 2 cards1 Start */
+ .maincard2
+ {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     position: absolute;
+     margin-top: 48%;
+     justify-content: space-between;
+ }
+ .maincard2 .card1 
+ {
+     width: 20%;
+     height: 79vh;
+     position: absolute;
+     margin-top: 3%;
+     margin-left: 4%;
+     box-shadow: 2px 4px 7px rgb(186, 184, 184);
+     background-color: #fff;
+ }
+ .maincard2 .card1 img
+{
+    width: 95%;
+    height:45%;
+    position: absolute;
+    margin-top: 0;
+    transition: 0.4s;
+}
+.maincard2 .card1 img:hover
+{
+   transform: scale(0.9);
+}
+.maincard2 .card1 h1
+{
+    color:rgb(3, 3, 101);
+    font-size: 16px;
+    font-weight: bold;     
+    position: absolute;
+    margin-top: 126%;
+    margin-left: 6%;
+}
+.maincard2 .card1 p
+{
+    color: #101010;
+    font-size: 16px;
+    font-weight: bold;  
+    position: absolute;
+    margin-top: 95%;
+    margin-left: 5%;   
+}
+.maincard2 .card1 a
+{
+ position: absolute;
+ bottom: 80px;
+ left: 65px;
+ width: 140px;
+ height: 30px;
+ border-radius:15px ;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: rgb(3, 3, 101);
+ transition: 0.4s;
+}
+.maincard2 .card1 a button
+{
+ color: white;
+ cursor: pointer;
+ background-color: transparent;
+ border: none;
+ width: 100%;
+ height: 100%; 
+ 
+}
+.maincard2 .card1 a:hover
+{
+ background-color: rgba(3, 3, 147, 0.931);
+ color: white;
+}
+/* section 2 cards1 End */
+  /* section 2 cards2 Start */
+ .maincard2 .card2
+{
+     width: 20%;
+     height: 79vh;
+     position: absolute;
+     margin-top: 3%;
+     margin-left: 28%;
+     box-shadow: 2px 4px 7px rgb(186, 184, 184);
+     background-color: #fff;
+}
+.maincard2 .card2 img
+{
+    width: 99%;
+    height:60%;
+    position: absolute;
+    margin-top: -10%;
+    transition: 0.4s;
+}
+.maincard2 .card2 img:hover
+{
+   transform: scale(0.9);
+}
+.maincard2 .card2 h1
+{
+    color:rgb(3, 3, 101);
+    font-size: 16px;
+    font-weight: bold;     
+    position: absolute;
+    margin-top: 126%;
+    margin-left: 6%;
+}
+.maincard2 .card2 p
+{
+    color: #101010;
+    font-size: 16px;
+    font-weight: bold;  
+    position: absolute;
+    margin-top: 95%;
+    margin-left: 5%;   
+}
+.maincard2 .card2 a
+{
+ position: absolute;
+ bottom: 80px;
+ left: 65px;
+ width: 140px;
+ height: 30px;
+ border-radius:15px ;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: rgb(3, 3, 101);
+ transition: 0.4s;
+}
+.maincard2 .card2 a button
+{
+ color: white;
+ cursor: pointer;
+ background-color: transparent;
+ border: none;
+ width: 100%;
+ height: 100%; 
+ 
+}
+.maincard2 .card2 a:hover
+{
+ background-color: rgba(3, 3, 147, 0.931);
+ color: white;
+}
+ /* section 2 cards2 End */
+  /* section 2 cards3 Start */
+  .maincard2 .card3
+  {
+       width: 20%;
+       height: 79vh;
+       position: absolute;
+       margin-top: 3%;
+       margin-left: 52%;
+       box-shadow: 2px 4px 7px rgb(186, 184, 184);
+       background-color: #fff;
+  }
+  .maincard2 .card3 img
+  {
+      width: 95%;
+      height:45%;
+      position: absolute;
+      margin-top: 0;
+      transition: 0.4s;
+ }
+ .maincard2 .card3 img:hover
+ {
+     transform: scale(0.9);
+ }
+ .maincard2 .card3 h1
+ {
+      color:rgb(3, 3, 101);
+      font-size: 16px;
+      font-weight: bold;     
+      position: absolute;
+      margin-top: 126%;
+      margin-left: 6%;
+ }
+ .maincard2 .card3 p
+ {
+      color: #101010;
+      font-size: 16px;
+      font-weight: bold;  
+      position: absolute;
+      margin-top: 95%;
+      margin-left: 5%;   
+ }
+ .maincard2 .card3 a
+ {
+   position: absolute;
+   bottom: 80px;
+   left: 65px;
+   width: 140px;
+   height: 30px;
+   border-radius:15px ;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(3, 3, 101);
+   transition: 0.4s;
+ }
+ .maincard2 .card3 a button
+ {
+   color: white;
+   cursor: pointer;
+   background-color: transparent;
+   border: none;
+   width: 100%;
+   height: 100%; 
+   
+ }
+ .maincard2 .card3 a:hover
+ {
+   background-color: rgba(3, 3, 147, 0.931);
+   color: white;
+ }
+   /* section 2 cards3 End */
+   /* section 2 cards4 Start */
+  .maincard2 .card4
+  {
+       width: 20%;
+       height: 79vh;
+       position: absolute;
+       margin-top: 3%;
+       margin-left: 76%;
+       box-shadow: 2px 4px 7px rgb(186, 184, 184);
+       background-color: #fff;
+  }
+  .maincard2 .card4 img
+  {
+      width: 95%;
+      height:45%;
+      position: absolute;
+      margin-top: 0;
+      transition: 0.4s;
+ }
+ .maincard2 .card4 img:hover
+ {
+     transform: scale(0.9);
+ }
+ .maincard2 .card4 h1
+ {
+      color:rgb(3, 3, 101);
+      font-size: 16px;
+      font-weight: bold;     
+      position: absolute;
+      margin-top: 126%;
+      margin-left: 6%;
+ }
+ .maincard2 .card4 p
+ {
+      color: #101010;
+      font-size: 16px;
+      font-weight: bold;  
+      position: absolute;
+      margin-top: 95%;
+      margin-left: 5%;   
+ }
+ .maincard2 .card4 a
+ {
+   position: absolute;
+   bottom: 80px;
+   left: 65px;
+   width: 140px;
+   height: 30px;
+   border-radius:15px ;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(3, 3, 101);
+   transition: 0.4s;
+ }
+ .maincard2 .card4 a button
+ {
+   color: white;
+   cursor: pointer;
+   background-color: transparent;
+   border: none;
+   width: 100%;
+   height: 100%; 
+   
+ }
+ .maincard2 .card4 a:hover
+ {
+   background-color: rgba(3, 3, 147, 0.931);
+   color: white;
+ }
+ /* section 2 cards4 End */
+ /* section 2 cards Group2 End */
+
+/* section 5 footer start */
+  /* div left1 start */
+  .footer
+  {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    margin-top: 96%;
+    background-color: rgb(7, 7, 87);
+  }
+  .footer .left1
+  {
+    width: 20%;
+    height: 50vh;
+    margin-top: 5.8%;
+    margin-left: 70px;
+    position: relative;
+    border-left: 4px solid #fff;
+  }
+  .footer .left1::before
+  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 4px;
+    height: 25px;
+    background-color: navy;
+    animation: movelines 4s linear infinite;
+  }
+  @keyframes  movelines
+  {
+    50%
+    {
+      top: 90%;
+    }
+    100%
+    {
+      top: 0;
+    }
+    150%
+    {
+      top: 90%;
+    }
+  }
+  .footer .left1 h1
+  {
+    color: #fff;
+    font-size: 25px;
+    padding: 5px 35px;
+   
+  }
+  .footer .left1 a span
+  {
+    color: rgba(224, 220, 220, 0.753);
+    font-size: 17px;
+    display: block;
+    padding: 12px 20px;
+  }
+  .footer .left1 a span:hover
+  {
+    color: #fff;
+    font-size: 18px;
+  }
+    /* div left1 End */
+    /* div center start */
+    .center
+    {
+      width: 53%;
+      height: 55vh;
+      margin-left: 23%;
+      display: flex;
+      margin-top: -15.5%;
+    }
+    .center .centerleft
+    {
+      width: 55%;
+      height: 50vh;
+      padding: 0px 10px;
+      margin-top: -15%;
+      margin-left: 10%;
+      position: relative;
+      border-left: 4px solid #fff;
+    }
+    .center .centerleft::before
+    {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -4px;
+      width: 4px;
+      height: 25px;
+      background-color: navy;
+      animation: movelines 4s linear infinite;
+    }
+    @keyframes  movelines
+  {
+    50%
+    {
+      top: 90%;
+    }
+    100%
+    {
+      top: 0;
+    }
+    150%
+    {
+      top: 90%;
+    }
+  }
+    .center .centerleft h1
+    {
+      color: #fff;
+      font-size: 25px;
+      padding: 5px 35px;
+     
+    }
+    .center .centerleft span
+    {
+      color: rgba(255, 255, 255, 0.566);
+      padding: 12px 20px;
+      display: block;
+      font-size: 17px;
+    }
+    .center .centerleft span:hover
+    {
+      color: #fff;
+      font-size: 18px;
+    }
+    .center .centerRight
+    {
+      width: 55%;
+      height: 50vh;
+      padding: 0px 10px;
+      margin-top: -15%;
+      margin-left: 10%;
+      position: relative;
+      border-left: 4px solid #fff;
+    }
+    .center .centerRight::before
+    {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -4px;
+      width: 4px;
+      height: 25px;
+      background-color: navy;
+      animation: movelines 4s linear infinite;
+    }
+    @keyframes  movelines
+  {
+    50%
+    {
+      top: 90%;
+    }
+    100%
+    {
+      top: 0;
+    }
+    150%
+    {
+      top: 90%;
+    }
+  }
+    .center .centerRight h1
+    {
+      color: #fff;
+      font-size: 25px;
+      padding: 5px 30px;
+    }
+    .center .centerRight span
+    {
+      color: rgba(255, 255, 255, 0.566);
+      padding: 12px 20px;
+      display: block;
+      font-size: 17px;
+    }
+    .center .centerRight span:hover
+    {
+      color: #fff;
+      font-size: 18px;
+    }
+    /* div center End*/
+     /* div left2 start */
+     .footer .left2
+     {
+       width: 18%;
+       height: 50vh;
+       padding: 0px 10px;
+       margin-left: 82%;
+       margin-top: -34.5%;
+       position: relative;
+       border-left: 4px solid #fff;
+     }
+     .footer .left2::before
+     {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -4px;
+      width: 4px;
+      height: 25px;
+      background-color: navy;
+      animation: movelines 4s linear infinite;
+     }
+     @keyframes  movelines
+     {
+       50%
+       {
+         top: 90%;
+       }
+       100%
+       {
+         top: 0;
+       }
+       150%
+       {
+         top: 90%;
+       }
+     }
+     .footer .left2 h1
+     {
+       color: #fff;
+       font-size: 25px;
+       padding: 5px 30px;
+     }
+     .footer .left2 a span
+     {
+      color: rgba(224, 220, 220, 0.753);
+       font-size: 17px;
+       display: block;
+       padding: 12px 20px;
+     }
+     .footer .left2 a span:hover
+     {
+       color: #fff;
+       font-size: 18px;
+     }
+    /* div left2 End */
+    /* barand pictures logo start  */
+    .brands_logo_picture
+    {
+      width: 60%;
+      height: 15vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4%;
+      margin-left: 21%;
+    }
+    .brands_logo_picture a img
+    {
+      width: 100%;
+      height: 10vh;
+    }
+    .brands_logo_picture a img:hover
+    {
+      width: 101%;
+      height: 11vh;
+    }
+     /* barand pictures logo start  */
+     /* logoicon start */
+     .iconpics1
+     {
+       width: 90%;
+       height: 15vh;
+       margin-top: 0.5%;
+       margin-left: 7%;
+       display: flex;
+     }
+     .iconpics1 a img
+     {
+       width: 30px;
+       height: 5vh;
+       margin: -15% 3%;
+     }
+     .iconpics1 a img:hover
+     {
+       width: 33px;
+       height: 5.5vh;
+       margin: -15% 3%;
+     }
+     .iconpics1 a 
+     {
+       color: #fff;
+       font-size: 16px;
+       margin: 1% 0.5%;
+     }
+     .iconpics2
+     {
+      width: 30%;
+      height: 10vh;
+      margin-top: -7%;
+      margin-left: 35%;
+      display: flex;
+     }
+     .iconpics2 a img
+     {
+       width: 32px;
+       height: 6vh;
+       margin: -15% 8%;
+     }
+     .iconpics2 a img:hover
+     {
+       width: 34px;
+       height: 6.5vh;
+       margin: -15% 8%;
+     }
+     .iconpics2 a 
+     {
+       color: #fff;
+       font-size: 16px;
+       margin: 3% 2%;
+     }
+     .iconpics3
+     {
+      width: 30%;
+      height: 10vh;
+      margin-top: -3%;
+      margin-left: 65%;
+      display: flex;
+     }
+     .iconpics3 a img
+     {
+       width: 40px;
+       height: 5vh;
+       margin: -4% 4%;
+     }
+     .iconpics3 a img:hover
+     {
+       width: 43px;
+       height: 5.5vh;
+       margin: -7% 4%;
+     }
+     .iconpics3 a 
+     {
+       color: #fff;
+       font-size: 16px;
+       margin: -2% 1%;
+     }
+    /* logoicon End */
+    #upicon
+    {
+      width: 5%;
+      height: 10%;
+      position: absolute;
+      margin-top: -5%;
+      margin-left: 94%;
+      background-color: rgb(7, 7, 87);
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    #upicon img
+    {
+      width: 100%;
+      height:auto;
+    }
+    #upicon img:hover
+    {
+      width: 110%;
+      height:60px;
+    }
+    /* section 5 footer  End */

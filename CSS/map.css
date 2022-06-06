@@ -1,0 +1,13 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+.map src
+{
+    width: 300%;
+    height: 100vh;
+}
